@@ -46,12 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd3e66d8d5be4a4aa0d7a875875d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 3
-  maxForce: 0.1
-  neighborhoodRadius: 3
-  separationAmount: 1.2
-  cohesionAmount: 1
-  alignmentAmount: 1
+  data: {fileID: 11400000, guid: 189ccc86c3a883d45afc35de5d7234da, type: 2}
   acceleration: {x: 0, y: 0}
   velocity: {x: 0, y: 0}
 --- !u!212 &212898628359471008
@@ -101,9 +96,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3625043607559282579, guid: 0d267bc78a0864eb48358689b29ed20a,
+  m_Sprite: {fileID: 8966945178157639174, guid: cb572bf1e4e2cac4592275c6afd85426,
     type: 3}
-  m_Color: {r: 0, g: 0.7371485, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
