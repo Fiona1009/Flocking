@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb23ac20aa1ed7f46affdf6ce5860850, type: 3}
   m_Name: OMG_ScriptableObjectFish
   m_EditorClassIdentifier: Assembly-CSharp::ScriptableObjectFish
-  maxSpeed: 7.36
-  maxForce: 0.15
-  neighborhoodRadius: 1.94
-  separationRadius: 6.65
-  separationAmount: 0.42
-  cohesionAmount: 0.16
-  alignmentAmount: 0.09
+  maxSpeed: 2.49
+  maxForce: 0.17
+  neighborhoodRadius: 6.73
+  separationRadius: 1.38
+  separationAmount: 2.34
+  cohesionAmount: 1.34
+  alignmentAmount: 0.79
