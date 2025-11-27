@@ -17,5 +17,5 @@ MonoBehaviour:
   neighborhoodRadius: 6.73
   separationRadius: 1.38
   separationAmount: 2.34
-  cohesionAmount: 1.34
+  cohesionAmount: 3
   alignmentAmount: 0.79
