@@ -242,7 +242,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Size: {x: 20, y: 11}
-  fishPrefab: {fileID: 1138331384927246, guid: 9d1d0b91403a8814ab6853947579bad9, type: 3}
+  fishes:
+  - {fileID: 1138331384927246, guid: 9d1d0b91403a8814ab6853947579bad9, type: 3}
+  - {fileID: 5916375458042722110, guid: 3413c91819d713741a98ba9110a2d564, type: 3}
+  - {fileID: 2764659214446867855, guid: 0c27e4d252aff1f42a923d6be8a2966b, type: 3}
   SpawningCount: 150
   myCamera: {fileID: 519420031}
 --- !u!4 &576343055

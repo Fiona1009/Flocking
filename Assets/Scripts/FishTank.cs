@@ -7,7 +7,7 @@ public class FishTank : MonoBehaviour
     private Vector2 Size = new Vector2(16f, 9f);
 
     [SerializeField]
-    private GameObject fishPrefab = null;
+    private GameObject[] fishes = new GameObject[0];
 
     [Range(0, 300)]
     [SerializeField]
@@ -16,7 +16,7 @@ public class FishTank : MonoBehaviour
     [SerializeField]
     private Camera myCamera;
 
-    private List<Fish> fisheslist = new List<Fish>();
+    private List<Fish> fishesInstance = new List<Fish>();
 
     private void Start()
     {
@@ -28,11 +28,17 @@ public class FishTank : MonoBehaviour
 
     private void Createfish(Vector3 worldPosition)
     {
-        GameObject fishInstance = Instantiate(fishPrefab, transform);
+        // choisir index au pif
+        int randomIndex = Random.Range(0, fishes.Length);
+
+        // récupérer un poisson ou prefab au hasard dans la liste
+        GameObject fish = fishes[randomIndex];
+
+        // GameObject fishInstance = Instantiate(fishPrefab, transform);
+        GameObject fishInstance = Instantiate(fish, transform);
         fishInstance.gameObject.name = $"Fish {System.Guid.NewGuid()}";
         fishInstance.transform.position = worldPosition;
-        // fishes[i] = fishInstance.GetComponent<Fish>();
-        fisheslist.Add(fishInstance.GetComponent<Fish>());
+        fishesInstance.Add(fishInstance.GetComponent<Fish>());
     }
 
     private void LateUpdate()
@@ -76,10 +82,10 @@ public class FishTank : MonoBehaviour
 
 
         // Loop around out of bound fishes.
-        int fishesCount = fisheslist.Count;
+        int fishesCount = fishesInstance.Count;
         for (int i = 0; i < fishesCount; i++)
         {
-            Fish fish = fisheslist[i];
+            Fish fish = fishesInstance[i];
             Vector3 position = fish.transform.localPosition;
 
             // Left border?
